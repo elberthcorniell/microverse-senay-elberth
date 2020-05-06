@@ -10,10 +10,16 @@
     <h1 id="title">Survey Form!</h1>
     <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sunt eligendi nesciunt laudantium similique aperiam, animi veritatis maiores expedita eos esse voluptas repellat non!</p>
     <form id="survey-form">
-      <input id="name" placeholder="Name" />
-      <input id="email" placeholder="Email Address" type="email" />
-      <input id="number" type="number" placeholder= "Enter Number" />
-
+      <label id="name-label">Your Name:</label>
+      <input id="name" required placeholder="Name" />
+      <label id="email-label">Your Email:</label>
+      <input id="email" required placeholder="Email Address" type="email" />
+      <label id="number-label">Your Number:</label>
+      <input id="number" type="number" placeholder= "Enter Number" min="1" max="10" />
+      <select id="dropdown" >
+        <option>1</option>
+        <option>2</option>
+      </select>
 
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
